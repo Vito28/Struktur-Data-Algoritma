@@ -1,0 +1,42 @@
+/* Hapus warna latar belakang default pada navigasi */
+.md-nav__item {
+  background-color: transparent; /* Tidak ada latar belakang */
+  padding-left: 10px; /* Spasi untuk teks */
+}
+
+/* Hover: Latar belakang lebih elegan */
+.md-nav__item:hover {
+  background-color: rgba(0, 0, 255, 0.1); /* Biru lembut */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Garis biru hanya di item yang sedang dipilih */
+.md-nav__item--active > a {
+  border-left: 4px solid blue; /* Garis biru hanya di item aktif */
+  background-color: rgba(0, 0, 255, 0.15); /* Sedikit lebih gelap */
+  padding-left: 10px;
+  transition: border-left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Sub-folder yang aktif juga mendapatkan garis biru */
+.md-nav__item--active > .md-nav__link {
+  border-left: 4px solid blue; /* Garis biru di sub-folder aktif */
+}
+
+/* Efek animasi slide-in untuk garis biru */
+.md-nav__item--active > a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: blue;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Aktifkan animasi saat item dipilih */
+.md-nav__item--active > a:hover::before {
+  transform: scaleY(1);
+}
