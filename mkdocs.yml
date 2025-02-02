@@ -15,9 +15,9 @@ nav:
       - Introduction to Basic Programming: basic-programming/index.md
       - Variables & Data Types: basic-programming/variables.md
       - Operators: basic-programming/operators.md
-      - Control Flow: basic-programming/control-flow.md
-          - If Statement: basic-programming/if-statement.md
-          - For Loop: basic-programming/for-loop.md
+      - Control Flow: 
+        - If Statement: basic-programming/if-statement.md
+        - For Loop: basic-programming/for-loop.md
       - Functions: basic-programming/functions.md
       - Recursion: basic-programming/recursion.md
       - Arrays: basic-programming/arrays.md
