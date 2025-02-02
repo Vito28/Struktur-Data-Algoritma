@@ -3,24 +3,84 @@ site_description: Dokumentasi Struktur Data & Algoritma
 site_author: Delvin De Vito
 theme:
   name: material
-  copyright: 'Dokumentasi ini dibuat oleh [Nama Anda]'
+  copyright: 'Dokumentasi ini dibuat oleh Delvin De Vito'
 extra_css:
   - assets/stylesheets/navigation.css
+
 nav:
   - Home: index.md
-  - Struktur Data:
-      - Overview: struktur-data/index.md
-      - LinkedList:
-          - Overview: struktur-data/linkedlist/index.md
-          - Implementasi: struktur-data/linkedlist/implementasi.md
-          - Aplikasi: struktur-data/linkedlist/aplikasi.md
+  - Introduction: introduction.md
+  - Prerequisites: prerequisites.md
+  - Basic Programming Concepts:
+      - Introduction to Basic Programming: basic-programming/index.md
+      - Variables & Data Types: basic-programming/variables.md
+      - Operators: basic-programming/operators.md
+      - Control Flow: basic-programming/control-flow.md
+          - If Statement: basic-programming/if-statement.md
+          - For Loop: basic-programming/for-loop.md
+      - Functions: basic-programming/functions.md
+      - Recursion: basic-programming/recursion.md
+      - Arrays: basic-programming/arrays.md
+      - Pointers: basic-programming/pointers.md
+  - Object-Oriented Programming:
+      - Introduction to OOP: oop/index.md
+      - Class & Object: oop/class-object.md
+      - Inheritance: oop/inheritance.md
+      - Polymorphism: oop/polymorphism.md
+      - Encapsulation & Abstraction: oop/encapsulation-abstraction.md
+  - Design Patterns:
+      - Introduction to Design Patterns: design-patterns/index.md
+      - Creational Patterns:
+          - Singleton: design-patterns/creational/singleton.md
+          - Factory: design-patterns/creational/factory.md
+      - Structural Patterns:
+          - Adapter: design-patterns/structural/adapter.md
+          - Composite: design-patterns/structural/composite.md
+      - Behavioral Patterns:
+          - Observer: design-patterns/behavioral/observer.md
+          - Strategy: design-patterns/behavioral/strategy.md
+  - Data Structures:
+      - Introduction to Data Structures: data-structures/index.md
+      - Array:
+          - Overview: data-structures/array/index.md
+          - Implementation: data-structures/array/implementation.md
+          - Applications: data-structures/array/applications.md
+      - Linked List:
+          - Overview: data-structures/linked-list/index.md
+          - Implementation: data-structures/linked-list/implementation.md
+          - Applications: data-structures/linked-list/applications.md
       - Stack:
-          - Overview: struktur-data/stack/index.md
-          - Implementasi: struktur-data/stack/implementasi.md
-          - Aplikasi: struktur-data/stack/aplikasi.md
-      - BST:
-          - Overview: struktur-data/bst/index.md
-          - Implementasi: struktur-data/bst/implementasi.md
-          - Aplikasi: struktur-data/bst/aplikasi.md
-  - Algoritma: algoritma/index.md
-  - Pemrograman: pemrograman/index.md
+          - Overview: data-structures/stack/index.md
+          - Implementation: data-structures/stack/implementation.md
+          - Applications: data-structures/stack/applications.md
+      - Queue:
+          - Overview: data-structures/queue/index.md
+          - Implementation: data-structures/queue/implementation.md
+          - Applications: data-structures/queue/applications.md
+      - Binary Search Tree (BST):
+          - Overview: data-structures/bst/index.md
+          - Implementation: data-structures/bst/implementation.md
+          - Applications: data-structures/bst/applications.md
+      - Graph:
+          - Overview: data-structures/graph/index.md
+          - Implementation: data-structures/graph/implementation.md
+          - Applications: data-structures/graph/applications.md
+  - Algorithms:
+      - Introduction to Algorithms: algorithms/index.md
+      - Sorting Algorithms:
+          - Bubble Sort: algorithms/sorting/bubble-sort.md
+          - Selection Sort: algorithms/sorting/selection-sort.md
+          - Merge Sort: algorithms/sorting/merge-sort.md
+          - Quick Sort: algorithms/sorting/quick-sort.md
+      - Searching Algorithms:
+          - Linear Search: algorithms/searching/linear-search.md
+          - Binary Search: algorithms/searching/binary-search.md
+      - Graph Algorithms:
+          - BFS (Breadth-First Search): algorithms/graph/bfs.md
+          - DFS (Depth-First Search): algorithms/graph/dfs.md
+          - Dijkstra's Algorithm: algorithms/graph/dijkstra.md
+      - Dynamic Programming:
+          - Introduction to Dynamic Programming: algorithms/dp/index.md
+          - Fibonacci (DP Approach): algorithms/dp/fibonacci.md
+          - Knapsack Problem: algorithms/dp/knapsack.md
+  - Conclusion: conclusion.md
