@@ -1,18 +1,62 @@
 site_name: Struktur Data & Algoritma
 site_description: Dokumentasi Struktur Data & Algoritma
 site_author: Delvin De Vito
+
 theme:
   name: material
-  copyright: 'Dokumentasi ini dibuat oleh Delvin De Vito'
-extra_css:
-  - assets/stylesheets/navigation.css
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Vito28
+
+copyright: Copyright &copy; 2024 Delvin De Vito
 
 nav:
   - Home: index.md
   - Introduction: introduction.md
   - Prerequisites: prerequisites.md
   - Basic Programming Concepts:
-      - Introduction to Basic Programming: basic-programming/index.md
+      - Introduction to Basic Programming: basic-programming/introduction.md
       - Variables & Data Types: basic-programming/variables.md
       - Operators: basic-programming/operators.md
       - Control Flow: 
